@@ -1,0 +1,193 @@
+
+section#formulario{
+	position: relative;
+	left: 50%;
+	margin-left: -200px;
+	width:400px;
+	min-height: 200px;
+	background-color: #EAD8B4;
+	overflow: hidden;
+	border-radius: 5px;
+
+}
+
+p#titulo{
+	font-size: 1.3em;
+	font-family: arial, helvetica;
+	color: #5E4F3D;
+	text-align: center;
+	margin-top: 50px;
+}
+
+input[type="text"], input[type="password"], input[type="mail"], textarea{
+	width: 350px;
+	height: 35px;
+	margin-left: 20px;
+	margin-top:10px;
+	padding-left: 10px;
+	font-size: 1.1em;
+	outline: none;
+	border:0px;
+	background-color: #fff;
+	
+}
+
+textarea{
+	max-width:  350px;
+	min-width: 350px;
+	min-height: 70px;
+	padding-top: 10px;
+	font-family: arial, helvetica;
+}
+
+input[type="submit"]{
+	margin:20px;
+	margin-bottom: 20px;
+	width:360px;
+	height: 40px;
+	outline: none;
+	border:0px;
+	background-color: #5E4F3D;
+	color: white;
+	font-size: 1.2em;
+	
+	-webkit-box-shadow:0px 5px 0px #ffffff;
+
+}
+
+@media screen and (max-width: 800px){
+	body {
+		background:#fff
+	}  
+}
+/*--- cdo llega a un max de 800 el fondo se pone bco ---*/
+
+@media screen and (max-width: 400px){
+	.contenedor {
+		width:100%;
+	}
+	.nosotros img {
+		width:100%;
+	}
+	
+/*--- cdo llega a un max de 300 el fondo se pone al 100% ---*/
+
+@media screen and (max-width: 800px){
+	.main {
+		width:100%;	
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
