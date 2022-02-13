@@ -4,11 +4,13 @@
 }
 
 body {
-	background-color: #D9B876;
+	/* background-color: #D9B876; */
+	background-color: #F0E3C8;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
 	background-size: cover;
+	font-family: 'Montserrat', sans-serif;
 }
 
 .ir-arriba {
@@ -104,7 +106,124 @@ body {
 
  
 /*Menu*/
-header nav {
+.nav {
+	background:#5E4F3D !important;
+	
+}
+.div-nav {
+	display: flex;
+	justify-content: end;
+}
+.nav a {
+	color:#fff !important;
+	font-weight: 400;
+	font-size: 1.1rem;
+	transition-duration: 0.5s;
+}
+a:hover {
+	color:#EAD8B4 !important;
+}
+
+/* CARROUSEL */
+
+.img-carrousel {
+	width: 100%;
+	height: 45vw;
+}
+
+/* INICIO TEXTO */
+/* H1 */
+.nosotros h1 {
+    color:#5E4F3D;
+	text-align: center;
+	font-weight: 700;
+	font-size: 2.5rem;
+}
+.text-intro {
+	font-size: 1.2rem;
+}
+/* IMG */
+.img-salida-playa {
+	border-radius: 50px;
+	transition-duration: 0.9s;
+}
+.img-salida-playa:hover {
+	border-radius: 20px;
+	filter: drop-shadow(2px 2px 5px #D9B876);
+}
+/* SALIDA */
+.text-playa {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #5E4F3D;
+	text-shadow: #D9B876 2px 5px;
+}
+.playa-h5 {
+	font-size: 2rem;
+}
+
+/* INICIO SERVICIOS */
+.section-servicios {
+	background-image: url("../img/index/servicios-fondo.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+.container-servicios {
+	background-color: #f0e3c8be;
+	border-radius: 10px;
+}
+.title-servicios {
+	color: #5E4F3D;
+	font-weight: 700;
+	font-size: 2.5rem;
+}
+.container-items {
+	display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    grid-gap: 20px;
+    justify-content: center;
+	text-align: center;
+}
+.container-items p {
+	font-weight: 600;
+	transition-duration: 0.9s;
+}
+.container-items p:hover {
+	transform: scale(1.2);
+	filter: drop-shadow(5px 5px 5px #5E4F3D);
+}
+
+/* PILETA */
+.logos img {
+	border-radius: 5px;
+	transition-duration: 0.5s;
+}
+.logos img:hover {
+    filter: drop-shadow(5px 2px 8px #5E4F3D);
+}
+/* Galeria */
+.btn-img {
+	cursor: pointer;
+}
+
+/* VIDEO */
+.predio-playa {
+	background: rgb(240,227,200);
+	background: linear-gradient(326deg, rgba(94,79,61,1) 0%, rgba(240,227,200,1) 75%, rgba(94,79,61,1) 100%);
+}
+.video-predio {
+	width: 79%;
+	height: 500px;
+	border-radius: 2%;
+}
+
+/* FOOTER */
+footer {
+	background-color: #5E4F3D; 
+	color: #F0E3C8;
+}
+/* header nav {
 	background:#5E4F3D;
 	overflow:hidden;
 
@@ -140,12 +259,12 @@ color:#8C8275;
 	background-color: rgba(255, 255, 255, 0.60);
 	
  /*--- fondo contenedor con opacidad ---*/
-}
+/* }  */
 
 
 /*--- MAIN ---*/
 
-#main  {
+/* #main  {
 	padding: 10px 40px 40px 10px;
 	
 }
@@ -180,10 +299,10 @@ h2 {
 	font-family: arial, helvetica, san serif;
 	line-height: 24px; /*--- interlineado---*/
 
-}
+/* } */
 
 
-.thumb img  {
+/* .thumb img  {
 	width: 60%;
 	margin-left: 20px;
 	margin-top: 10px;
@@ -268,30 +387,30 @@ footer {
 	margin-top: 20px;
 	margin-left: 20px;
 
-}
+} */
 
 
-@media screen and (max-width: 800px){
+/* @media screen and (max-width: 800px){
 	body {
 		background:#fff
 	}  
 }
 /*--- cdo llega a un max de 800 el fondo se pone bco ---*/
 
-@media screen and (max-width: 400px){
+/* @media screen and (max-width: 400px){
 	.contenedor {
 		width:100%;
 	}
 	.nosotros img {
 		width:100%;
 	}
-	
+}	 */
 /*--- cdo llega a un max de 300 el fondo se pone al 100% ---*/
 
-@media screen and (max-width: 800px){
+/* @media screen and (max-width: 800px){
 	.main {
 		width:100%;	
 	}
 	
-}
+}  */
 
