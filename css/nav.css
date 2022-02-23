@@ -1,0 +1,20 @@
+.nav {
+    background-color: #5E4F3D !important;
+}
+.div-nav {
+	display: flex;
+	justify-content: end;
+}
+.nav a {
+	color:#fff !important;
+	font-weight: 400;
+	font-size: 1.1rem;
+	transition-duration: 0.5s;
+}
+a:hover {
+	color:#EAD8B4 !important;
+}
+a:active {
+    background-color: #352c22 !important;
+    border-radius: 10px;
+}
