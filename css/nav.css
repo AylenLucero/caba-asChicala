@@ -1,5 +1,6 @@
 body {
-    background-color: #F0E3C8;   
+    background-color: #F0E3C8;  
+    font-family: 'Montserrat', sans-serif; 
 }
 
 nav {
@@ -31,9 +32,9 @@ nav {
 
 .enlaces-menu li a {
     text-decoration: none;
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     color: #FFFFFF;
-    font-weight: 400;
+    font-weight: 600;
     transition-duration: 1s;
 }
 
@@ -106,7 +107,7 @@ nav {
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        height: 52vh;
+        height: 32vh;
         margin: 0;
         padding: 0;
         width: 100%;
@@ -115,7 +116,7 @@ nav {
         transition: opacity 5s ease-out;
     }
     .enlaces-menu li {
-        width: 100%;
+        width: 95%;
         text-align: center;
         padding: 20px;
         transition-duration: 1s;
@@ -124,12 +125,18 @@ nav {
         background-color: #72614c;
     }
     .enlaces-menu li a {
-        font-size: 1.7rem;
+        font-size: 1rem;
     }
     .ham {
         display: block;
         position: absolute;
         top: 15px;
         right: 25px;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+    .enlaces-menu {
+        height: 70vh;
     }
 }
