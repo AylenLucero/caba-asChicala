@@ -7,6 +7,10 @@ nav {
     align-items: center;
     justify-content: space-between;
     background-color: #5E4F3D;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
 }
 
 /* logo */
@@ -118,6 +122,9 @@ nav {
     }
     .enlaces-menu li:hover {
         background-color: #72614c;
+    }
+    .enlaces-menu li a {
+        font-size: 1.7rem;
     }
     .ham {
         display: block;
