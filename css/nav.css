@@ -1,0 +1,128 @@
+body {
+    background-color: #F0E3C8;   
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #5E4F3D;
+}
+
+/* logo */
+.logo-pagina {
+    margin-left: 80px;
+}
+
+/* menu */
+.enlaces-menu {
+    display: flex;
+    padding: 0;
+}
+
+.enlaces-menu li {
+    padding: 0 40px;
+    list-style: none;
+} 
+
+.enlaces-menu li a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    font-weight: 400;
+    transition-duration: 1s;
+}
+
+.enlaces-menu li a:hover {
+    color: #D9B876;
+} 
+
+/* BUTTON */
+.ham {
+    display: none;
+    cursor: pointer;
+    border: none;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    transition-duration: 1.2s;
+}
+
+.ham:hover {
+    transform: rotate(180deg);
+}
+
+.ham span {
+    display: block;
+    background-color: #FFFFFF;
+    height: 3px;
+    width: 28px;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+/* Animacion */
+@keyframes muestraMenu {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+/* menuburger */
+.enlaces-menu.activado{
+    display:flex; 
+    animation: muestraMenu 350ms ease-in-out both;
+}
+
+.br-1.animado{
+    transform: rotate(-45deg) translate(-10px, 8px);
+}
+  
+.br-2.animado{
+    opacity: 0;
+}
+.br-3.animado{
+    transform: rotate(45deg) translate(-10px, -8px);
+}
+
+.ham.girar:hover{
+    transform:rotate(360deg);
+}
+
+
+/* MEDIAQUERY */
+@media (max-width: 1000px) {
+    body {
+        overflow: hidden;
+    }
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 25px;
+        padding-bottom: 25PX;
+    }
+    .enlaces-menu {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 52vh;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        display: none;
+        opacity:0;
+        transition: opacity 5s ease-out;
+    }
+    .enlaces-menu li {
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+        transition-duration: 1s;
+    }
+    .enlaces-menu li:hover {
+        background-color: #72614c;
+    }
+    .ham {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 25px;
+    }
+}
