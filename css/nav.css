@@ -1,6 +1,5 @@
-body {
-    background-color: #F0E3C8;  
-    font-family: 'Montserrat', sans-serif; 
+header {
+    margin-bottom: 51px;
 }
 
 nav {
@@ -96,6 +95,9 @@ nav {
 @media (max-width: 1000px) {
     body {
         overflow: hidden;
+    }
+    header {
+        margin-bottom: 69px;
     }
     nav {
         flex-direction: column;

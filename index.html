@@ -8,6 +8,7 @@
   <meta name="keywords"
     content="cabañas, complejo, San Clemente del Tuyú, vacaciones, mar, pileta, cabañas junto al mar.">
   <!-- <link href="css/estilos.css" rel="stylesheet"> -->
+  <link href="css/index.css" rel="stylesheet">
   <link href="css/nav.css" rel="stylesheet">
   <!-- <link rel="stylesheet" href="style/index_style.css"> -->
   <link href="fonts.css" rel="stylesheet">
@@ -39,9 +40,29 @@
       </button>
     </nav>
   </header>
-
+  <section class="slide-contenedor">
+    <div class="mi-slider fade">
+      <img src="img/slider/1.jpeg" alt="portada1">
+    </div>
+    <div class="mi-slider fade">
+      <img src="img/slider/2.jpeg" alt="portada2">
+    </div>
+    <div class="mi-slider fade">
+      <img src="img/slider/3.jpeg" alt="portada3">
+    </div>
+    <div class="direcciones">
+      <a class="atras" onclick="avanzaSlide(-1)">sddsf</a>
+      <a class="adelante" onclick="avanzaSlide(1)">sfsdf</a>
+    </div>
+    <div class="barras">
+      <span class="barra active" onclick="posicionSlide(1)"></span>
+      <span class="barra" onclick="posicionSlide(2)"></span>
+      <span class="barra" onclick="posicionSlide(3)"></span>
+    </div>
+  </section>
 
   <script src="js/nav.js"></script>
+  <script src="js/slider.js"></script>
 </body>
 
 </html>
