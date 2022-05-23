@@ -8,3 +8,9 @@ ham.addEventListener('click', () => {
         child.classList.toggle('animado')
     })
 })
+// const iconoMenu = document.querySelector('#icono-menu');
+// const menu = document.querySelector('#menu');
+
+// iconoMenu.addEventListener('click', (e) => {
+//     const rutaActual= e.target.getAttribute('src');
+// })
