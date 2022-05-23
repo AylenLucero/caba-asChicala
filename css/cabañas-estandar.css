@@ -1,0 +1,149 @@
+.cabañas-estandar {
+    width: 100%;
+}
+
+.estandar {
+    background-image: url('/img/fondo-servicios-index.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+.title {
+    padding-top: 100px;    
+    padding-bottom: 100px;
+    text-align: center;
+    color: #5E4F3D;
+    font-size: 2.5rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+    filter: drop-shadow(2px 2px 2px #2a231b);
+}
+
+/* Intro */
+.intro {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+.intro p {
+    width: 70%;
+    font-size: 1.1rem;
+}
+.intro p a {
+    color: #5E4F3D;
+    text-decoration: none;
+}
+
+/* Caracteristicas */
+.estandar-info {
+    display: flex;
+    justify-content: center;
+}
+.div-estandar-info {
+    background-color: #fff8e9a8;
+    color: #5E4F3D;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 95%;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+.segundo {
+    margin-top: 20px;
+}
+.div2-estandar-info {
+    width: 95%;
+}
+.caracteristicas-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    column-gap: 50px;
+    row-gap: 10px;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+.item-caract {
+    display: flex;
+    flex-direction: row;
+}
+.item-caract:hover {
+    color: #2a231b;
+}
+.item-caract p {
+    padding-top: 5px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+
+/* Check */
+.check {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.div-check {    
+    background-color: #D5C7AD;
+    width: 95%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.div-check p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2a231b;
+    padding-top: 15px;
+}
+
+/* Galeria */
+.section-galeria {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.div-ver-galeria {
+    width: 95%;
+    height: 200px;
+    background-image: url('/img/atardecer.jpg');
+    background-size: cover;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.div-ver-galeria p {
+    background-color: #f0e3c869;
+    width: 25%;
+    padding-top: 30px;
+    padding-bottom: 25px;
+    color: #2a231b;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    transition-duration: 1.5s;
+    cursor: pointer;
+}
+.div-ver-galeria p:hover {
+    width: 50%;
+    text-decoration: underline #2a231b;
+}
+
+/* estandarModal */
+.estandarrModal {
+    background-color: #F0E3C8;
+}
+
+/* Nav arreglo */
+.enlaces-menu li {
+    margin-top: 15px;
+}
+
+/* Footer arreglo */
+.footer-container p {
+    padding-top: 15px;
+}

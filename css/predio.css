@@ -1,0 +1,240 @@
+.nosotros-title {
+    text-align: center;
+    margin-top: 100px;
+    color: #5E4F3D;
+    font-size: 2.3rem;
+    font-weight: 600;
+    filter: drop-shadow(2px 2px 5px #5e4f3dbb);
+}
+.section-video {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.video-drone {
+    width: 70%;
+    height: 480px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Segunda seccion */
+.section-global-cards {
+    background-color: #5e4f3d30;
+}
+.section-global-cards h3 {
+    padding-top: 70px;
+    filter: drop-shadow(2px 2px 5px #5E4F3D);
+}
+.section-cards {
+    width: 100%;  
+    margin-top: 40px;
+    padding-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 50px;
+    justify-content: center;
+}
+
+.img-fondo-cards {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.div-image {
+    background-image: url('/img/fondo-cards.jpg');
+    background-size: 300px;
+    transition-duration: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 10px;
+    transition-duration: 1s;
+}
+.div-image div {
+    width: 90%;
+    height: 90%;
+    background-color: #f0e3c869;
+    color: #2a231b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
+    border-radius: 10px;
+}
+.div-image:hover {
+    filter: drop-shadow(3px 3px 8px #2a231b);
+    transform: rotate(-2deg);
+}
+.div-image div:hover {
+    width: 100%;
+    height: 100%;
+}
+
+.div-image p {
+    font-size: 2rem;
+    font-weight: 600;
+    filter: drop-shadow(2px 2px 5px #ffffff);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* MODALS */
+.modals {
+    background-color: #F0E3C8 !important;
+}
+.modals h5 {
+    color: #5E4F3D;
+}
+
+.title-modal {
+    color: #5E4F3D;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    text-align: center;
+}
+.text-modal {
+    color: #2a231b;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: center;
+}
+.text-modal p {
+    width: 90%;
+    text-align: justify;
+}
+.pics {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
+    grid-gap: 30px;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.pics img {
+    width: 300px;
+    height: 200px;
+    border-radius: 2%;
+    transition-duration: 0.7s;
+    cursor: pointer;
+}
+.pics img:hover {
+    filter: drop-shadow(2px 2px 5px #2a231b);
+}
+
+/* IMG GRANDE */
+.ful-img {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.88);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 99;
+}
+.ful-img span {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: #F0E3C8;
+    cursor: pointer;
+}
+.ful-img img {
+    width: 90%;
+    max-width: 600px;
+}
+
+/* Recreacion peliculas y desayuno */
+.film h3 {
+    text-align: center;
+    color: #5E4F3D;
+    margin-top: 80px;
+    font-size: 2.3rem;
+    font-weight: 600;
+    filter: drop-shadow(2px 2px 5px #5e4f3dbb);
+}
+
+.section-film {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+}
+.text-section-film {
+    width: 45%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    color: #5E4F3D;
+}
+.pic-section-film {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+}
+.pic-section-film img {
+    width: 400px;
+    height: 280px;
+    border-radius: 2%;
+    filter: drop-shadow(2px 2px 5px #5e4f3d);
+    transition-duration: 0.7s;
+}
+.pic-section-film img:hover {
+    filter: drop-shadow(5px 5px 5px #2a231b);
+}
+
+/* Nav arreglo */
+.enlaces-menu li {
+    margin-top: 15px;
+}
+/* Footer arreglo */
+.footer-container p {
+    padding-top: 15px;
+}
+
+@media (max-width: 1000px) {
+    /* Modals */
+    .pics {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 200px);
+        grid-gap: 10px;
+    }
+    
+    .pics img {
+        width: 200px;
+        height: 170px;
+    }
+    /* recreacion pelis */
+    .section-film {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .text-section-film {
+        width: 90%;
+    }
+    
+    .pic-section-film {
+        margin-top: 20px;
+    }
+    .pic-section-film img {
+        width: 400px;
+    }
+}
+@media (max-width:700px) {
+    .pics {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 150px);
+        grid-gap: 10px;
+    }
+    .pics img {
+        width: 150px;
+        height: 150px;
+    }
+}

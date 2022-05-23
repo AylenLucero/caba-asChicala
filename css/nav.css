@@ -1,3 +1,7 @@
+body {
+    background-color: #F0E3C8;
+    font-family: 'Montserrat', sans-serif;
+}
 header {
     margin-bottom: 51px;
 }
@@ -15,8 +19,20 @@ nav {
 }
 
 /* logo */
+.logo-chicala {
+    filter: drop-shadow(2px 2px 3px white);
+}
+
 .logo-pagina {
-    margin-left: 80px;
+    margin-left: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    filter: drop-shadow(2px 2px 8px white);
+    transition-duration: 0.5s;
+}
+
+.logo-pagina:hover {
+    filter: drop-shadow(2px 2px 8px #D9B876);
 }
 
 /* menu */
@@ -28,7 +44,7 @@ nav {
 .enlaces-menu li {
     padding: 0 40px;
     list-style: none;
-} 
+}
 
 .enlaces-menu li a {
     text-decoration: none;
@@ -40,7 +56,7 @@ nav {
 
 .enlaces-menu li a:hover {
     color: #D9B876;
-} 
+}
 
 /* BUTTON */
 .ham {
@@ -65,47 +81,49 @@ nav {
     margin: 10px auto;
     border-radius: 2px;
 }
-/* Animacion */
-@keyframes muestraMenu {
-    from {opacity: 0;}
-    to {opacity: 1;}
-  }
+
 /* menuburger */
-.enlaces-menu.activado{
-    display:flex; 
+.enlaces-menu.activado {
+    display: flex;
     animation: muestraMenu 350ms ease-in-out both;
 }
 
-.br-1.animado{
+.br-1.animado {
     transform: rotate(-45deg) translate(-10px, 8px);
 }
-  
-.br-2.animado{
+
+.br-2.animado {
     opacity: 0;
 }
-.br-3.animado{
+
+.br-3.animado {
     transform: rotate(45deg) translate(-10px, -8px);
 }
 
-.ham.girar:hover{
-    transform:rotate(360deg);
+.ham.girar:hover {
+    transform: rotate(360deg);
 }
 
 
 /* MEDIAQUERY */
+
 @media (max-width: 1000px) {
-    body {
+
+    /* body {
         overflow: hidden;
-    }
+    } */
     header {
         margin-bottom: 69px;
     }
+
     nav {
         flex-direction: column;
         align-items: flex-start;
         padding-top: 25px;
         padding-bottom: 25PX;
+
     }
+
     .enlaces-menu {
         flex-direction: column;
         justify-content: space-around;
@@ -115,21 +133,25 @@ nav {
         padding: 0;
         width: 100%;
         display: none;
-        opacity:0;
+        opacity: 0;
         transition: opacity 5s ease-out;
     }
+
     .enlaces-menu li {
         width: 95%;
         text-align: center;
         padding: 20px;
         transition-duration: 1s;
     }
+
     .enlaces-menu li:hover {
         background-color: #72614c;
     }
+
     .enlaces-menu li a {
         font-size: 1rem;
     }
+
     .ham {
         display: block;
         position: absolute;

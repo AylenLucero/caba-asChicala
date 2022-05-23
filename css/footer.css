@@ -1,0 +1,145 @@
+.footer-container {
+    background-color: #5E4F3D;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: 80px;
+    color: #FFFFFF;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.grupo-iconos {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+i {
+    padding-top: 18px;
+}
+
+.icono {
+    color: #FFFFFF;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    transition-duration: 0.7s;
+}
+
+.icono:hover {
+    color: #D9B876;
+}
+
+.icono p {
+    padding-left: 10px;
+}
+
+.grupo-direccion {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.map {
+    border-radius: 2%;
+}
+
+.container-text-admision {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.text-admision {
+    font-size: 0.8rem;
+    width: 80%;
+}
+
+.creador {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.linea {
+    width: 80%;
+    height: 2px;
+    background-color: #F0E3C8;
+    border-radius: 90%;
+
+}
+
+/* SUBIR */
+.ir-arriba {
+    display: none;
+    padding: 25px;
+    background: #d9b876ac;
+    color: #5E4F3D;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+@media (max-width: 1000px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .grupo-iconos {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+    }
+
+    .icono {
+        width: 20%;
+    }
+
+    .map {
+        width: 90% !important;
+    }
+}
+
+@media (max-width:700px) {
+    .grupo-iconos {
+        flex-direction: column;
+    }
+
+    .icono {
+        width: 45%;
+    }
+    .grupo-direccion {
+        width: 90%;
+    }
+    .map {
+        width: 100% !important;
+    }
+    .linea {
+        width: 100%;
+    }
+    .text-admision {
+        width: 100%;
+    }
+}
