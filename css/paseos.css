@@ -1,0 +1,50 @@
+h2, h4 {
+    text-align: center;
+    color: #5E4F3D;
+    filter: drop-shadow(2px 2px 5px #5e4f3dbb);
+}
+
+h2 {
+    margin-top: 120px;
+    font-size: 2.3rem;
+    font-weight: 600;
+}
+h4 {
+    font-size: 1.5rem;
+    
+}
+
+.container-text-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-text {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 200px);
+    grid-gap: 40px;
+    justify-content: center;
+    width: 45%;
+}
+.container-img {
+    width: 45%;
+}
+.img {
+    width: 100%;
+}
+/* Cod de js, informacion */
+
+.info {
+    display: flex;
+    flex-direction: row;
+    color: #5E4F3D;
+}
+.info:hover {
+    color: #2a231b;
+}
+.info p {
+    margin-left: 5px;
+}
+.fa-solid {
+    margin-top: 6px;    
+}
