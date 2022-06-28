@@ -10,7 +10,8 @@
     text-shadow: 1px 1px 5px #F0E3C8;
     animation-duration: 5s;
     animation-name: slidein;
-    }
+}
+
     
     @keyframes slidein {
         from {
@@ -97,9 +98,9 @@
 .bajada-playa {
     padding-top: 50px;
     color: #5E4F3D;
-    font-size: 2.2rem;
+    filter: drop-shadow(2px 2px 5px #5e4f3dbb);
+    font-size: 2.3rem;
     letter-spacing: 5px;
-    font-weight: 900;
     text-align: center;
     position: relative;
 }
@@ -112,7 +113,7 @@
 
 .texto-bajada {
     color: #5E4F3D;
-    width: 73%;
+    width: 85%;
     font-size: 1.2rem;
 }
 
@@ -123,10 +124,11 @@
 }
 
 .img-bajada img {
-    width: 30%;
+    width: 25%;
     border-radius: 5%;
     transition-duration: 1s;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .img-bajada img:hover {
@@ -154,7 +156,6 @@
 
 .servicios {
     background-image: url('/img/fondo-servicios-index.jpeg');
-    background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
     text-align: center;
@@ -190,7 +191,6 @@
 
 .contenedor-texto-ubicacion {
     text-align: center;
-    width: 70%;
     color: #5E4F3D;
     font-size: 1.2rem;
     font-weight: 600;
@@ -206,6 +206,9 @@ iframe {
 }
 
 @media (max-width: 1000px) {
+    .titulo-cabañas {
+        padding-top: 30px;
+    }
     .img-bajada {
         flex-direction: column;
         align-items: center;
@@ -213,7 +216,7 @@ iframe {
 
     .img-bajada img {
         margin-top: 20px;
-        width: 80%;
+        width: 60%;
     }
 
     .img-bajada img:hover {
@@ -221,7 +224,13 @@ iframe {
     }
 
     .texto-bajada {
-        width: 80%;
+        width: 90%;
+    }
+    .clasificacion-servicios p {
+        font-size: 0.5rem;
+    }
+    .contenedor-texto-ubicacion p {
+        font-size: 1.07rem;
     }
 }
 
@@ -232,6 +241,9 @@ iframe {
 
     .direcciones {
         height: 400px;
+    }
+    .clasificacion-servicios p {
+        font-size: 0.8rem;
     }
 
 }

@@ -49,6 +49,10 @@
     height: 50px;
     padding-bottom: 5px;
     color: #2a231b;
+    transition-duration: 1s;
+}
+.btn-video:hover {
+    color: #d9b876;
 }
 /* NOSOTROS */
 .container-sobre-nosotros {
@@ -88,7 +92,7 @@
 }
 /* Segunda seccion */
 .section-global-cards {
-    background-color: #5e4f3d30;
+    background-color: #D5C7AD;
 }
 .section-global-cards h3 {
     filter: drop-shadow(2px 2px 5px #5E4F3D);
@@ -220,12 +224,15 @@
  h3 {
     text-align: center;
     color: #5E4F3D;
-    margin-top: 80px;
+    margin-top: 30px;
+    padding-bottom: 30px;
     font-size: 2.3rem;
     font-weight: 600;
     filter: drop-shadow(2px 2px 5px #5e4f3dbb);
 }
-
+.film h3 {
+    margin-top: 80px;
+}
 .section-film {
     width: 100%;
     display: flex;
@@ -266,6 +273,13 @@
 }
 
 @media (max-width: 1000px) {
+    /* Titulo */
+    .container-title {
+        display: none;
+    }
+    .container-btn {
+        margin-top: 30px;
+    }
     /* Modals */
     .pics {
         display: grid;
@@ -277,7 +291,15 @@
         width: 200px;
         height: 170px;
     }
+    /* Nosotros */ 
+    .grupo-iconos-nosotros {
+        flex-direction: column;
+        align-items: center;
+    }
     /* recreacion pelis */
+    .desayuno-text {
+        padding-top: 20px;
+    }
     .section-film {
         flex-direction: column;
         align-items: center;
@@ -304,4 +326,11 @@
         width: 150px;
         height: 150px;
     }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+    .desayuno-text {
+        padding-top: 20px;
+    }
+
 }

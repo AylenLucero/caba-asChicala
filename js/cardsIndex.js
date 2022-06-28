@@ -25,7 +25,7 @@ const fulImgEstandar = document.getElementById("fulImgEstandar");
 
 let secciones = [
     {
-        title:'PILETA',
+        title:'PISCINA',
         modal:'#modalPileta'
     }, 
     {

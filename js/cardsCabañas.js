@@ -2,7 +2,7 @@ let sectionCards= document.getElementById('section-cards');
 
 let datosCards= [
     {
-        img:"img/bajada/1.jpg",
+        img:"galerias/estandar/1a.jpg",
         a: "cabañas-estandar.html",
         title:"ESTANDAR",
         subTitle:"4 personas"

@@ -133,6 +133,47 @@
     text-decoration: underline #2a231b;
 }
 
+/* SELECCIONAR OTRAS CABAÑAS */
+.tresBloques {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 395px);
+    column-gap: 50px;
+    row-gap: 10px;
+    justify-content: center;
+    margin-top: 70px;
+}
+.tresBloques a {
+    text-decoration: none ;
+}
+.una {
+    height: 150px;
+    background-color: #D5C7AD;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 1s;
+}
+.una:hover {
+    transform: rotate(-2deg);
+}
+.nombreUna {
+    width: 200px;
+    height: 100px;
+    background-color: #f0e3c869;
+    color: #5E4F3D;
+    text-shadow: 2px 2px 5px #5e4f3dbb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition-duration: 1s;
+}
+.nombreUna:hover {
+    width: 400px;
+    height: 200px;
+}
+
 /* estandarModal */
 .estandarrModal {
     background-color: #F0E3C8;
@@ -146,4 +187,14 @@
 /* Footer arreglo */
 .footer-container p {
     padding-top: 15px;
+}
+
+@media (max-width: 1000px) {
+    .div-ver-galeria p {
+        width: 50%;
+    }
+    .div-check {
+        flex-direction: column;
+        align-items: center;
+    }
 }
