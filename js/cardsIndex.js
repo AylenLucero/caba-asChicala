@@ -3,6 +3,7 @@ let sectionCards = document.getElementById('section-cards');
 // Galeria dentro del modal seccion
 let sectionCardModalPileta = document.getElementById('section-cards-modal-pileta');
 let sectionCardModalPlaya = document.getElementById('section-cards-modal-playa');
+let sectionCardModalJuegos = document.getElementById('section-cards-modal-juegos');
 let sectionCardModalParque = document.getElementById('section-cards-modal-parque');
 let sectionCardModalG = document.getElementById('section-cards-modal-g');
 let sectionCardModalQuincho = document.getElementById('section-cards-modal-quincho');
@@ -13,6 +14,8 @@ const fulImgBoxPlaya = document.getElementById("fulImgBoxPlaya");
 const fulImgPlaya = document.getElementById("fulImgPlaya");
 const fulImgBoxParque = document.getElementById("fulImgBoxParque");
 const fulImgParque = document.getElementById("fulImgParque");
+const fulImgBoxJuegos = document.getElementById("fulImgBoxJuegos");
+const fulImgJuegos = document.getElementById("fulImgJuegos");
 const fulImgBoxPileta = document.getElementById("fulImgBoxPileta");
 const fulImgPileta = document.getElementById("fulImgPileta");
 const fulImgBoxG = document.getElementById("fulImgBoxG");
@@ -67,15 +70,55 @@ let datosCardsPileta = [{img: "galerias/pileta/1.jpg",alt: "1", src: "fulImgBoxP
 //OBJ PLAYA
 let datosCardsPlaya = [{img: "galerias/playa/1.png",alt: "1", src: "fulImgBoxPlaya", Id:"fulImgPlaya"},{img: "galerias/playa/2.png",alt: "2", src: "fulImgBoxPlaya", Id:"fulImgPlaya"},{img: "galerias/playa/4.png",alt: "4", src: "fulImgBoxPlaya", Id:"fulImgPlaya"},{img: "galerias/playa/5.png",alt: "5", src: "fulImgBoxPlaya", Id:"fulImgPlaya"},{img: "galerias/playa/6.png",alt: "6", src: "fulImgBoxPlaya", Id:"fulImgPlaya"},{img: "galerias/playa/7.jpg",alt: "7", src: "fulImgBoxPlaya", Id:"fulImgPlaya"}];
 
+// OBJ JUEGOS 
+let datosCardsJuegos = [
+    {img: "galerias/juegos/1.jpeg",alt: "1", src: "fulImgBoxJuegos", Id:"fulImgJuegos"},
+    {img: "galerias/juegos/2.jpeg",alt: "2", src: "fulImgBoxJuegos", Id:"fulImgJuegos"},
+    {img: "galerias/juegos/3.jpeg",alt: "3", src: "fulImgBoxJuegos", Id:"fulImgJuegos"},
+    {img: "galerias/juegos/4.jpeg",alt: "4", src: "fulImgBoxJuegos", Id:"fulImgJuegos"},
+];
 
-// g50nas56
+// gimnasio
 let datosCardsG = [{img: "galerias/g/1.jpg",alt: "1", src: "fulImgBoxG", Id:"fulImgG"},{img: "galerias/g/2.jpg",alt: "2", src: "fulImgBoxG", Id:"fulImgG"},{img: "galerias/g/3.jpg",alt: "3", src: "fulImgBoxG", Id:"fulImgG"},{img: "galerias/g/4.jpg",alt: "4", src: "fulImgBoxG", Id:"fulImgG"}];
 
 //OBJ PARQUE
-let datosCardsParque = [{img: "galerias/parque/1.jpg",alt: "1", src: "fulImgBoxParque", Id:"fulImgParque"},{img: "galerias/parque/2.jpg",alt: "2", src: "fulImgBoxParque", Id:"fulImgParque"},{img: "galerias/parque/3.jpg",alt: "3", src: "fulImgBoxParque", Id:"fulImgParque"},{img: "galerias/parque/4.jpg",alt: "4", src: "fulImgBoxParque", Id:"fulImgParque"},{img: "galerias/parque/5.jpg",alt: "5", src: "fulImgBoxParque", Id:"fulImgParque"},{img: "galerias/parque/6.jpg",alt: "6", src: "fulImgBoxParque", Id:"fulImgParque"},{img: "galerias/parque/7.jpg",alt: "7", src: "fulImgBoxParque", Id:"fulImgParque"},{img: "galerias/parque/8.jpg",alt: "8", src: "fulImgBoxParque", Id:"fulImgParque"},{img: "galerias/parque/9.jpg",alt: "9", src: "fulImgBoxParque", Id:"fulImgParque"},{img: "galerias/parque/10.jpg",alt: "10", src: "fulImgBoxParque", Id:"fulImgParque"},{img: "galerias/parque/11.jpg",alt: "11", src: "fulImgBoxParque", Id:"fulImgParque"}];
+let datosCardsParque = [
+    {img: "galerias/parque/1.jpg",alt: "1", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/2.jpg",alt: "2", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/2a.jpeg",alt: "2a", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/3.jpg",alt: "3", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/4a.jpeg",alt: "4a", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/4.jpg",alt: "4", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/5.jpg",alt: "5", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/6.jpg",alt: "6", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/6a.jpeg",alt: "6a", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/7.jpg",alt: "7", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/8.jpg",alt: "8", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/9.jpg",alt: "9", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/10.jpg",alt: "10", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/10a.jpeg",alt: "10a", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/11.jpg",alt: "11", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/11a.jpeg",alt: "12", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/11b.jpeg",alt: "13", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/12.jpeg",alt: "14", src: "fulImgBoxParque", Id:"fulImgParque"},
+    {img: "galerias/parque/13.jpeg",alt: "15", src: "fulImgBoxParque", Id:"fulImgParque"}
+];
 
 //OBJ QUINCHO
-let datosCardsQuincho = [{img: "galerias/quincho/1.jpg",alt: "1", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},{img: "galerias/quincho/2.jpg", alt: "2", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},{img: "galerias/quincho/3.jpg", alt: "3", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},{img: "galerias/quincho/4.jpg", alt: "4", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},{img: "galerias/quincho/5.jpg", alt: "5", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},{img: "galerias/quincho/6.jpg", alt: "6", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},{img: "galerias/quincho/7.jpg", alt: "7", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},{img: "galerias/quincho/8.jpg", alt: "8", src: "fulImgBoxQuincho", Id:"fulImgQuincho"}];
+let datosCardsQuincho = [
+    {img: "galerias/quincho/1.jpg",alt: "1", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},
+    {img: "galerias/quincho/1a.jpeg",alt: "1a", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},
+    {img: "galerias/quincho/2.jpg", alt: "2", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},
+    {img: "galerias/quincho/3.jpg", alt: "3", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},
+    {img: "galerias/quincho/4.jpg", alt: "4", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},
+    {img: "galerias/quincho/5.jpg", alt: "5", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},
+    {img: "galerias/quincho/6.jpg", alt: "6", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},
+    {img: "galerias/quincho/7.jpg", alt: "7", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},
+    {img: "galerias/quincho/8.jpg", alt: "8", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},
+    {img: "galerias/quincho/9.jpeg", alt: "9", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},
+    {img: "galerias/quincho/10.jpeg", alt: "10", src: "fulImgBoxQuincho", Id:"fulImgQuincho"},
+    {img: "galerias/quincho/11.jpeg", alt: "11", src: "fulImgBoxQuincho", Id:"fulImgQuincho"}
+];
 
 
 
@@ -107,6 +150,7 @@ const forModals = (data, ubic) => {
 
 forModals(datosCardsPileta, sectionCardModalPileta);
 forModals(datosCardsPlaya, sectionCardModalPlaya);
+forModals(datosCardsJuegos, sectionCardModalJuegos);
 forModals(datosCardsParque, sectionCardModalParque);
 forModals(datosCardsG, sectionCardModalG);
 forModals(datosCardsQuincho, sectionCardModalQuincho);

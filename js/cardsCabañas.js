@@ -15,13 +15,13 @@ let datosCards= [
     },
     {
         img:"img/bajada/1.jpeg",
-        a: "cabañas-premium.html",
+        a: "cabañas-premium6.html",
         title:"PREMIUM",
         subTitle:"4 personas"
     },
     {
         img:"img/bajada/1.jpeg",
-        a: "cabañas-premium.html",
+        a: "cabañas-premium6.html",
         title:"PREMIUM",
         subTitle:"6 personas"
     }
