@@ -4,13 +4,10 @@ const barras = document.querySelectorAll('.ham span');
 
 ham.addEventListener('click', () => {
     enlaces.classList.toggle('activado');
+    // if(enlaces.classList[1] == 'activado') {
+    //     enlaces.innerHTML= "hola"
+    // }
     barras.forEach(child => {
         child.classList.toggle('animado')
     })
 })
-// const iconoMenu = document.querySelector('#icono-menu');
-// const menu = document.querySelector('#menu');
-
-// iconoMenu.addEventListener('click', (e) => {
-//     const rutaActual= e.target.getAttribute('src');
-// })

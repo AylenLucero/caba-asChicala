@@ -8,7 +8,23 @@
     padding: 15px;
     border-radius: 5px;
     text-shadow: 1px 1px 5px #F0E3C8;
+    animation-duration: 5s;
+    animation-name: slidein;
 }
+
+    
+    @keyframes slidein {
+        from {
+            margin-left: 100%;
+            width: 300%
+        }
+    
+        to {
+            margin-left: 0%;
+            width: 100%;
+        }
+    }
+
 
 /* SLIDER */
 .mi-slider img {
@@ -42,49 +58,18 @@
     background-color: #ead8b4a4;
 }
 
-/* .barras{
-    position: absolute;
-    z-index: 2;
-    bottom: 0;
-    width: 99%;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 15px;
-} 
-
-.barra{
-    cursor: pointer;
-    height: 3px;
-    width: 70px;
-    margin: 0 2px;
-    background: #5E4F3D;
-    display: inline-block;
-    margin-left: 15px;
-    border-radius: 20px;
-} */
-
 .active {
     background-color: #F0E3C8;
 }
 
 
-/* .fade{
-    animation-name: fade;
-    animation-duration: 1.5s;    
-}
-
-@keyframes fade {
-    from {opacity: .6;}
-    to{opacity:1;}
-}  */
-
 /* BAJADA PLAYA */
 .bajada-playa {
     padding-top: 50px;
     color: #5E4F3D;
-    font-size: 2.2rem;
+    filter: drop-shadow(2px 2px 5px #5e4f3dbb);
+    font-size: 2.3rem;
     letter-spacing: 5px;
-    font-weight: 900;
     text-align: center;
     position: relative;
 }
@@ -97,7 +82,7 @@
 
 .texto-bajada {
     color: #5E4F3D;
-    width: 73%;
+    width: 85%;
     font-size: 1.2rem;
 }
 
@@ -108,10 +93,11 @@
 }
 
 .img-bajada img {
-    width: 30%;
+    width: 25%;
     border-radius: 5%;
     transition-duration: 1s;
     margin-bottom: 30px;
+    margin-top: 20px;
 }
 
 .img-bajada img:hover {
@@ -121,12 +107,6 @@
 }
 
 /* SERVICIOS */
-/* .titulo-servicios {
-    
-    filter: drop-shadow(5px 5px 8px #5E4F3D);
-    padding-top: 50px;
-    padding-bottom: 20px;
-} */
 .titulo-servicios h2 {
     color: #5E4F3D;
     font-weight: 900;
@@ -139,7 +119,6 @@
 
 .servicios {
     background-image: url('/img/fondo-servicios-index.jpeg');
-    background-repeat: no-repeat;
     background-attachment: fixed;
     width: 100%;
     text-align: center;
@@ -168,14 +147,13 @@
 .clasificacion-servicios p:hover {
     filter: drop-shadow(5px 5px 5px #5E4F3D);
     border-radius: 20%;
-    transform: rotate(10deg);
+    transform: rotate(-10deg);
 }
 
 /* UBICACION */
 
 .contenedor-texto-ubicacion {
     text-align: center;
-    width: 70%;
     color: #5E4F3D;
     font-size: 1.2rem;
     font-weight: 600;
@@ -191,6 +169,9 @@ iframe {
 }
 
 @media (max-width: 1000px) {
+    .titulo-cabañas {
+        padding-top: 30px;
+    }
     .img-bajada {
         flex-direction: column;
         align-items: center;
@@ -198,7 +179,7 @@ iframe {
 
     .img-bajada img {
         margin-top: 20px;
-        width: 80%;
+        width: 60%;
     }
 
     .img-bajada img:hover {
@@ -206,7 +187,13 @@ iframe {
     }
 
     .texto-bajada {
-        width: 80%;
+        width: 90%;
+    }
+    .clasificacion-servicios p {
+        font-size: 0.5rem;
+    }
+    .contenedor-texto-ubicacion p {
+        font-size: 1.07rem;
     }
 }
 
@@ -217,6 +204,9 @@ iframe {
 
     .direcciones {
         height: 400px;
+    }
+    .clasificacion-servicios p {
+        font-size: 0.8rem;
     }
 
 }

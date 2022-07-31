@@ -52,6 +52,15 @@
     color: #C19D62;
 }
 
+/* Nav arreglo */
+.enlaces-menu li {
+    margin-top: 15px;
+}
+
+/* Footer arreglo */
+.footer-container p {
+    padding-top: 15px;
+}
 
 @media (max-width: 1000px) {
     .inicio-form {

@@ -52,6 +52,8 @@ i {
 
 .map {
     border-radius: 2%;
+    width: 400px;
+    height: 100px;
 }
 
 .container-text-admision {
@@ -117,8 +119,13 @@ i {
         width: 20%;
     }
 
+    .grupo-direccion {
+        width: 100%;
+    }
+
     .map {
-        width: 90% !important;
+        width: 400px;
+        height: 100px;
     }
 }
 
@@ -133,13 +140,14 @@ i {
     .grupo-direccion {
         width: 90%;
     }
-    .map {
-        width: 100% !important;
-    }
     .linea {
         width: 100%;
     }
     .text-admision {
         width: 100%;
+    }
+    .map {
+        width: 300px;
+        height: 100px;
     }
 }
