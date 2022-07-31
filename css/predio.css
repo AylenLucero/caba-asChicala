@@ -183,7 +183,7 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
-.pics img {
+.pics img, iframe {
     width: 300px;
     height: 200px;
     border-radius: 2%;
@@ -203,7 +203,15 @@
     width: 90%;
     text-align: justify;
 }
-
+.section-video {
+    display: flex;
+    justify-content: center;
+}
+.section-video .video {
+    width: 500px;
+    height: 250px;
+    border-radius: 2%;
+}
 /* IMG GRANDE */
 .ful-img {
     width: 100%;
@@ -324,7 +332,7 @@
         flex-direction: column-reverse;
     }
     .pic-section-film {
-        width: 95%;
+        width: 70%;
     }
     .pic-section-film img {
         width: 100%;

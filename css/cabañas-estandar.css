@@ -133,6 +133,27 @@
     text-decoration: underline #2a231b;
 }
 
+/* Detalle cabaña superior video */
+.section-video-superior {
+    display: flex;
+    justify-content: space-evenly;
+}
+.section-video-superior iframe {
+    width: 400px;
+    height: 250px;
+    border-radius: 2%;
+}
+/* Detalle cabaña premium 6 video */
+.section-video-premium6 {
+    display: flex;
+    justify-content: center;
+}
+.section-video-premium6 iframe {
+    width: 500px;
+    height: 250px;
+    border-radius: 2%;
+}
+
 /* SELECCIONAR OTRAS CABAÑAS */
 .tresBloques {
     display: grid;

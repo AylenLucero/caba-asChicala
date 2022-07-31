@@ -29,7 +29,7 @@ h4 {
     justify-content: center;
     align-items: center;
     position: relative;
-    
+    z-index: 1;
 }
 
 .img {
@@ -64,6 +64,15 @@ h4 {
     padding-top: 20px;
     padding-bottom: 20px;
     font-weight: 700;
+}
+
+/* Nav arreglo */
+.enlaces-menu li {
+    margin-top: 15px;
+}
+/* Footer arreglo */
+.footer-container p {
+    padding-top: 15px;
 }
 
 @media (max-width: 1000px) {
