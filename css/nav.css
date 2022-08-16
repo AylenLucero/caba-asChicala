@@ -130,6 +130,9 @@ nav {
         width: 100%;
         display: none;
         transition: opacity 5s ease-out;
+        height: 40vh !important;
+        margin-top: 5vh !important;
+        margin-bottom: 5vh !important;
     }
 
     .enlaces-menu li {
@@ -137,6 +140,7 @@ nav {
         text-align: center;
         padding: 20px;
         transition-duration: 1s;
+        
     }
 
     .enlaces-menu li:hover {
@@ -156,7 +160,10 @@ nav {
 }
 
 @media (max-width: 1000px) and (orientation: landscape) {
+    /* ARREGLOS MENU */
     .enlaces-menu {
-        height: 70vh;
+        height: 70vh !important;
+        margin-top: 5vh !important;
+        margin-bottom: 10vh !important;
     }
 }
