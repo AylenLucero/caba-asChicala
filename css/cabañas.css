@@ -82,6 +82,10 @@
         margin-top: 5vh !important;
         margin-bottom: 5vh !important;
     }
+
+    .div-text {
+        top: 66.2%;
+    }
 }
 
 @media (max-width: 1000px) and (orientation: landscape) {
