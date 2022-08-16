@@ -8,6 +8,12 @@ let datosCards= [
         subTitle:"4 personas"
     },
     {
+        img:"galerias/estandar/1a.jpg",
+        a: "cabañas-estandarPremium.html",
+        title:"ESTANDAR PREMIUM",
+        subTitle:"4 personas"
+    },
+    {
         img:"img/bajada/2.jpeg",
         a: "cabañas-superior.html",
         title:"SUPERIOR",
