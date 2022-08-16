@@ -113,7 +113,7 @@
 }
 
 .div-image {
-    background-image: url('/img/fondo-cards.jpg');
+    background-image: url('../img/fondo-cards.jpg');
     background-size: 300px;
     transition-duration: 0.5s;
     display: flex;
@@ -372,3 +372,4 @@
         width: 100%;
     }
 }
+
