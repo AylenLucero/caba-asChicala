@@ -2,19 +2,17 @@
 .title-cabañas {    
     text-align: center;
     color: #5E4F3D;
-    margin-top: 80px;
     font-size: 2.3rem;
     font-weight: 600;
     filter: drop-shadow(2px 2px 5px #5e4f3dbb);        
-    margin-top: 120px;
+    margin-top: 150px;
+    margin-bottom: 80px;
 }
 .section-cards {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 300px);
-    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, 32.5%);
+    grid-gap: 10px;
     justify-content: center;
-    padding-top: 50px;
-    margin-bottom: 50px;
 }
 /* Se encuentra en js */
 .a-card {
@@ -24,41 +22,43 @@
     transition-duration: 0.5s;
 }
 .a-card:hover {
-    transform: scale(1.05);
+    /* transform: scale(1.05);
     color: black;
-    filter: drop-shadow(2px 2px 5px #2a231b);
-}
-.div-card {
-    background-color: #D5C7AD;
-    border-radius: 5px;
+    filter: drop-shadow(2px 2px 5px #2a231b); */
+    filter: drop-shadow(5px 3px 7px #0f0c0a);
 }
 
-.div-img {
-    display: flex;
-    justify-content: center;
+.div-card {
+    height: 410px;
 }
+
 .img-card {
     width: 100%;
-    height: 250px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px; 
+    height: 98%;
+    position: absolute; 
+    border-radius: 5px;
 }
 .div-text {
+    width: 100%;
+    color: #2a231b; 
+    background-color: #f0e3c88f;
+    position: absolute;  
+    z-index: 5; 
+    top: 74.2%;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: #5E4F3D;    
+    border-radius: 5px;
+    padding-top: 10px;
 }
 .div-text h4 {
     font-size: 1.7rem;
     font-weight: 600;
     letter-spacing: 0.5vh;
-    filter: drop-shadow(2px 2px 5px #5e4f3dbb);
+    filter: drop-shadow(2px 2px 5px #2a231b);
 }
 .div-text p {
     font-size: 1.3rem;
     font-weight: 500;
-    filter: drop-shadow(2px 2px 5px #F0E3C8);
+    filter: drop-shadow(2px 2px 5px #2a231b);
 }
 
 /* Nav arreglo */

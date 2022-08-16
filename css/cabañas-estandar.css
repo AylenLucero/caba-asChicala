@@ -157,8 +157,8 @@
 /* SELECCIONAR OTRAS CABAÑAS */
 .tresBloques {
     display: grid;
-    grid-template-columns: repeat(auto-fill, 395px);
-    column-gap: 50px;
+    grid-template-columns: repeat(auto-fill, 23%);
+    column-gap: 20px;
     row-gap: 10px;
     justify-content: center;
     margin-top: 70px;
@@ -174,6 +174,7 @@
     justify-content: center;
     align-items: center;
     transition-duration: 1s;
+    text-align: center;
 }
 .una:hover {
     transform: rotate(-2deg);
@@ -191,7 +192,7 @@
     transition-duration: 1s;
 }
 .nombreUna:hover {
-    width: 400px;
+    width: 100%;
     height: 200px;
 }
 
