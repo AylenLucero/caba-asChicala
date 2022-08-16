@@ -299,6 +299,12 @@
     .container-btn {
         margin-top: 30px;
     }
+    .video-drone {
+        width: 100%;
+    }
+    source {
+        height: 500px;
+    }
     /* Modals */
     .pics {
         display: grid;
@@ -317,6 +323,7 @@
     }
     /* recreacion pelis */
     .desayuno-text {
+        text-align: center;
         padding-top: 20px;
     }
     .section-film {
@@ -357,5 +364,12 @@
     .desayuno-text {
         padding-top: 20px;
     }
-
+    .pics {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 48%);
+    }
+    .pics img {
+        width: 100%;
+    }
 }
+

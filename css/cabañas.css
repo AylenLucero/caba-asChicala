@@ -70,3 +70,24 @@
 .footer-container p {
     padding-top: 15px;
 }
+
+@media (max-width: 1000px) {
+    .section-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 90%);
+    }
+    /* ARREGLOS MENU */
+    .enlaces-menu {
+        height: 40vh !important;
+        margin-top: 5vh !important;
+        margin-bottom: 5vh !important;
+    }
+}
+
+@media (max-width: 1000px) and (orientation: landscape) {
+    .section-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 70%);
+    }
+    
+}
