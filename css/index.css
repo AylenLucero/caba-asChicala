@@ -118,7 +118,7 @@
 }
 
 .servicios {
-    background-image: url('https://aylenlucero.github.io/img/fondo-servicios-index.jpeg');
+    background-image: url('../img/fondo-servicios-index.jpeg');
     background-attachment: fixed;
     width: 100%;
     text-align: center;

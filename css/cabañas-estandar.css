@@ -3,7 +3,7 @@
 }
 
 .estandar {
-    background-image: url('/img/fondo-servicios-index.jpeg');
+    background-image: url('../img/fondo-servicios-index.jpeg');
     background-size: cover;
     background-attachment: fixed;
 }
@@ -108,7 +108,7 @@
 .div-ver-galeria {
     width: 95%;
     height: 200px;
-    background-image: url('/img/atardecer.jpg');
+    background-image: url('../img/atardecer.jpg');
     background-size: cover;
     border-radius: 10px;
     display: flex;
@@ -254,3 +254,4 @@
         width: 60% !important;
     }
 }
+
