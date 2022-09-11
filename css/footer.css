@@ -3,7 +3,7 @@
     position: absolute;
     left: 0;
     width: 100%;
-    margin-top: 80px;
+    /* margin-top: 80px; */
     color: #FFFFFF;
 }
 
@@ -81,7 +81,22 @@ i {
     height: 2px;
     background-color: #F0E3C8;
     border-radius: 90%;
-
+}
+.iconos-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    width: 30%;
+}
+.icono-chicala-footer {
+    height: 50px;
+    width: 100px;
+    filter: drop-shadow(2px 2px 3px white);
+}
+.icono-colver-footer {
+    height: 70px;
+    width: 70px;
 }
 
 /* SUBIR */
@@ -102,6 +117,11 @@ i {
 
 }
 
+.creador-detalle {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    text-align: center;
+}
 
 @media (max-width: 1000px) {
     .footer {

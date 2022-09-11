@@ -150,9 +150,43 @@
     transform: rotate(-10deg);
 }
 
-/* UBICACION */
+/* BOTON CABAÑAS */
 
-.contenedor-texto-ubicacion {
+.conoce h3 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    margin-top: 70px;
+    color: #5E4F3D;
+    text-align: center;
+}
+.conoce button {
+    font-size: 1.3rem;
+    width: 400px;
+    height: 50px;
+    border: none;
+    color: #FFFFFF;
+    background-color: #5E4F3D;
+    border-radius: 5px;
+    cursor: pointer;
+    transition-duration: 0.9s;
+    margin-bottom: 50px;
+    filter: drop-shadow(2px 2px 5px #D5C7AD);
+}
+.conoce button:hover {
+    color: #C9A96F;
+    filter: drop-shadow(2px 2px 5px #2a231b);
+}
+.conoce-buttons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* UBICACION */
+.container-ubicacion {
+    background-color: #D5C7AD;
+    padding-bottom: 80px;
+}
+.contenedor-texto-ubicacion {    
     text-align: center;
     color: #5E4F3D;
     font-size: 1.2rem;
@@ -194,6 +228,11 @@ iframe {
     }
     .contenedor-texto-ubicacion p {
         font-size: 1.07rem;
+    }
+    .conoce-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 

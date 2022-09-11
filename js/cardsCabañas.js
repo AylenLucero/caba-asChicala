@@ -2,13 +2,13 @@ let sectionCards= document.getElementById('section-cards');
 
 let datosCards= [
     {
-        img:"galerias/estandar/1a.jpg",
+        img:"galerias/estandar/4.jpeg",
         a: "cabañas-estandar.html",
         title:"ESTANDAR",
         subTitle:"4 personas"
     },
     {
-        img:"galerias/estandar/1a.jpg",
+        img:"galerias/estandar-premium/6.jpg",
         a: "cabañas-estandarPremium.html",
         title:"ESTANDAR PREMIUM",
         subTitle:"4 personas"
@@ -21,7 +21,7 @@ let datosCards= [
     },
     {
         img:"img/bajada/1.jpeg",
-        a: "cabañas-premium6.html",
+        a: "cabañas-premium4.html",
         title:"PREMIUM",
         subTitle:"4 personas"
     },

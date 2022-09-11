@@ -1,36 +1,65 @@
 <?php 
 
-// 	if(isset($_POST["nombre"]) && !empty($_POST["nombre"]) &&
-// 	   isset($_POST["apellidos"]) && !empty($_POST["apellidos"]) &&
-// 	   isset($_POST["mail"]) && !empty($_POST["mail"]) &&
-// 	   isset($_POST["mensaje"]) && !empty($_POST["mensaje"])){
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-// 		$nombre = $_POST["nombre"] . " " . $_POST["apellidos"];
-// 		$mail = $_POST["mail"];
-// 		$mensaje = $_POST["mensaje"];
-
-// 		echo $nombre;
-// 		echo $mail;
-// 		echo $mensaje;
-
-// $email_message = "Detalles del formulario de contacto:\n\n";
-// $email_message .= "Nombre: " . $_POST['nombre'] . "\n";
-// $email_message .= "Apellido: " . $_POST['apellidos'] . "\n";
-// $email_message .= "E-mail: " . $_POST['mail'] . "\n";
-// $email_message .= "Comentarios: " . $_POST['mensaje'] . "\n\n";
+require 'Exception.php';
+require 'PHPMailer.php';
+require 'SMTP.php';
 
 
-// // Ahora se envía el e-mail usando la función mail() de PHP
 
-// $headers = 'From: '.$_POST["nombre"]. " " . $_POST["apellidos"]."\r\n". 
-//   'Reply-To: '.$_POST["mail"]."\r\n" .
-//   'X-Mailer: PHP/' . phpversion();
+	if(isset($_POST["nombre"]) && !empty($_POST["nombre"]) &&
+	   isset($_POST["apellido"]) && !empty($_POST["apellido"]) &&
+	   isset($_POST["email"]) && !empty($_POST["email"]) &&
+	   isset($_POST["mensaje"]) && !empty($_POST["mensaje"])){
 
-// 		mail("luceroaylen97@gmail.com", $mail, $nombre, $mensaje);
-// // veromilovich1972@gmail.com
-// 		echo "correo enviado satisfactoriamente";
+		$destino = "luceroaylen97@gmail.com";
+		$nombre = $_POST["nombre"] . " " . $_POST["apellido"];
+		$mail = $_POST["email"];
+		$mensaje = $_POST["mensaje"];
 
 
-// 	}
+		$email_message = "Detalles del formulario de contacto:\n\n";
+		$email_message .= "Nombre: " . $_POST['nombre'] . "\n";
+		$email_message .= "Apellido: " . $_POST['apellido'] . "\n";
+		$email_message .= "E-mail: " . $_POST['email'] . "\n";
+		$email_message .= "Comentarios: " . $_POST['mensaje'] . "\n\n";
 
- ?>
+
+$mail = new PHPMailer(true);
+
+try {
+    //Server settings
+    $mail->SMTPDebug = 0; //Enable verbose debug output
+    $mail->isSMTP(); //Send using SMTP
+    $mail->Host = 'smtp.office365.com'; //Set the SMTP server to send through
+    $mail->SMTPAuth = true; //Enable SMTP authentication
+    $mail->Username = 'lucero_aylen@hotmail.com.ar'; //SMTP username
+    $mail->Password = 'Sanclemente1!'; //SMTP password
+    $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; //Enable implicit TLS encryption
+    $mail->Port = 587; //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
+	$mail->SMTPOptions = array(
+    'ssl' => array(
+        'verify_peer' => false,
+        'verify_peer_name' => false,
+        'allow_self_signed' => true
+    )
+	);
+    //Recipients
+    $mail->setFrom('lucero_aylen@hotmail.com.ar', 'Mailer');
+    $mail->addAddress($destino, 'WEB A&K'); //Add a recipient
+
+    //Content
+    $mail->isHTML(true); //Set email format to HTML
+    $mail->Subject = 'Contacto desde A&K.com.ar';
+    $mail->Body = $email_message;
+    $mail->AltBody = $email_message;
+
+    $mail->send();
+}
+catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+}
+}
+?>
