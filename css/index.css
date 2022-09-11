@@ -151,14 +151,13 @@
 }
 
 /* BOTON CABAÑAS */
-.conoce {
-    text-align: center;
-    color: #5E4F3D;
-}
+
 .conoce h3 {
     font-family: 'Dancing Script', cursive;
     font-size: 3rem;
     margin-top: 70px;
+    color: #5E4F3D;
+    text-align: center;
 }
 .conoce button {
     font-size: 1.3rem;
@@ -176,6 +175,10 @@
 .conoce button:hover {
     color: #C9A96F;
     filter: drop-shadow(2px 2px 5px #2a231b);
+}
+.conoce-buttons {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 /* UBICACION */
@@ -225,6 +228,11 @@ iframe {
     }
     .contenedor-texto-ubicacion p {
         font-size: 1.07rem;
+    }
+    .conoce-buttons{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 

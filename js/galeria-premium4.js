@@ -11,7 +11,7 @@ let datosGaleria = [
     {img:"galerias/premium4/1.jpg",alt: "1", src: "fulImgBoxPremium4", Id:"fulImgPremium4"},
     {img:"galerias/premium4/2.jpg",alt: "2", src: "fulImgBoxPremium4", Id:"fulImgPremium4"},
     {img:"galerias/premium4/3.jpg",alt: "3", src: "fulImgBoxPremium4", Id:"fulImgPremium4"},
-    {img:"galerias/premium4/4.jpg",alt: "4", src: "fulImgBoPremium4", Id:"fulImgPremium4"},
+    {img:"galerias/premium4/4.jpg",alt: "4", src: "fulImgBoxPremium4", Id:"fulImgPremium4"},
     {img:"galerias/premium4/5.jpg",alt: "5", src: "fulImgBoxPremium4", Id:"fulImgPremium4"},
     {img:"galerias/premium4/6.jpg",alt: "6", src: "fulImgBoxPremium4", Id:"fulImgPremium4"},
     {img:"galerias/premium4/7.jpg",alt: "7", src: "fulImgBoxPremium4", Id:"fulImgPremium4"},

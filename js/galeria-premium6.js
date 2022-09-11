@@ -9,7 +9,6 @@ const fulImgEstandar = document.getElementById("fulImgPremium6");
 // Galeria estandar
 let datosGaleria = [
     {img:"galerias/premium6/1.jpg",alt: "1", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},
-    {img:"galerias/premium6/6.jpg",alt: "6", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},
     {img:"galerias/premium6/7.jpg",alt: "7", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},
     {img:"galerias/premium6/8.jpg",alt: "8", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},
     {img:"galerias/premium6/9.jpg",alt: "9", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},
@@ -18,12 +17,9 @@ let datosGaleria = [
     {img:"galerias/premium6/20.jpg",alt: "20", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},
     {img:"galerias/premium6/21.jpg",alt: "21", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},
     {img:"galerias/premium6/22.jpg",alt: "22", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},
-    {img:"galerias/premium6/24.jpg",alt: "24", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},
     {img:"galerias/premium6/32.jpg",alt: "32", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},
     {img:"galerias/premium6/33.jpg",alt: "33", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},
     {img:"galerias/premium6/34.jpg",alt: "34", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},
-    {img:"galerias/premium6/35.jpg",alt: "35", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},
-    {img:"galerias/premium6/36.jpg",alt: "36", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},
     {img:"galerias/premium6/37.jpg",alt: "37", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},
     {img:"galerias/premium6/38.jpg",alt: "38", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},
     {img:"galerias/premium6/39.jpg",alt: "39", src: "fulImgBoxPremium6", Id:"fulImgPremium6"},

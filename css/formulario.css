@@ -5,7 +5,12 @@
     text-align: center;
 }
 .title-form {
-    font-size: 1.7rem;    
+    font-size: 2rem;  
+    font-weight: 600;
+    filter: drop-shadow(2px 2px 5px #5e4f3dbb);
+}
+.info-form {
+    font-size: 1.1rem;
 }
 .div-section-form {
     display: flex;
